@@ -37,8 +37,15 @@ public class ResumeController {
                 return UnifiedRespond.returnThis("false", "未登录");
             } else {
                 resumeBaseInfo.setUserId(user.getUserId());
+                Example ex = new Example(ResumeBaseInfo.class);
+                ex.createCriteria().andEqualTo("userId",user.getUserId());
+                List<ResumeBaseInfo> rs = resumebaseinfoMapper.selectByExample(ex);
+                if (!rs.isEmpty()){
+                    return UnifiedRespond.returnThis("false", "您已经有简历了！");
+                }
             }
         }
+
         resumebaseinfoMapper.insertSelective(resumeBaseInfo);
         //返回主键ID
         int baseInfoId = resumeBaseInfo.getResumeBaseInfoId();
@@ -89,7 +96,7 @@ public class ResumeController {
 
         }
 
-        return new UnifiedShow().show(resumeBaseInfo1) ;
+        return new UnifiedShow().show(resumeBaseInfo1,true) ;
 
     }
 

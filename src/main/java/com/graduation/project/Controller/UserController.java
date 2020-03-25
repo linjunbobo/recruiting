@@ -140,6 +140,14 @@ public class UserController {
        User user = new User();
        user.setPhone(phone);
        user.setPassword(password);
+       if (phone == null || password==null){
+           JSONObject jsonObject = new JSONObject();
+           jsonObject.put("userId",null);
+           jsonObject.put("type",null);
+           jsonObject.put("status","false");
+           jsonObject.put("msg","账号/密码为空");
+           return new UnifiedShow().show(jsonObject);
+       }
         List<User> users = userMapper.select(user);
         if (users.isEmpty()){
             JSONObject jsonObject = new JSONObject();

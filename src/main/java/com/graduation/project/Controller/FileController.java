@@ -41,7 +41,7 @@ public class FileController  {
                     @DynamicParameter(name = "fileName", value = "图片名字"),
             })
     )
-    public UnifiedShow file(@ApiIgnore  HttpServletRequest request, @RequestParam("myFile") MultipartFile myFile) throws IllegalStateException, IOException {
+    public UnifiedShow file(@ApiIgnore  HttpServletRequest request, @RequestParam("file") MultipartFile myFile) throws IllegalStateException, IOException {
         //	System.out.println("myFile="+myFile);
         Map<String,String> map1 = new HashMap<>();
         //获取保存文件的真实路径

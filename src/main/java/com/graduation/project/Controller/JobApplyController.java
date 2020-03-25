@@ -112,13 +112,14 @@ public class JobApplyController {
             List<Resumeeducation> resumeeducationList = resumeBaseInfo.getResumeeducationList();
             StringBuilder profession = new StringBuilder();
             StringBuilder school = new StringBuilder();
+            if (resumeeducationList!=null){
             for (Resumeeducation resumeeducation : resumeeducationList) {
                 profession.append(resumeeducation.getProfession());
                 profession.append(" ");
                 school.append(resumeeducation.getSchool());
                 school.append(" ");
 
-
+            }
             }
             resumeSimple.setProfession(profession.toString());
             resumeSimple.setResumeBaseInfoId(resumbaseinfoId);
