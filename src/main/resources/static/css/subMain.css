@@ -1,0 +1,82 @@
+#curr_content {
+    width: 100%;
+    height: 100%;
+}
+#my_content {
+    width: 100%;
+    height: 100%;
+    min-width: 950px;
+    min-height: 596px;
+    padding-top: 50px; 
+}
+.page_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    z-index: 9;
+}
+.page_top > div {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 1px 0px 0px #e8e8e8;
+}
+.tabs_item {
+    color: #666;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.tabs_item:hover {
+    color: #1ca6fe;
+}
+.tabs_item_name {
+    position: relative;
+    height: 14px;
+    line-height: 14px;
+    margin: 27px 0 8px;
+}
+.tabs_item_name > b {
+	display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+.tabs_item_line {
+    display: none;
+    width: 32px;
+    height: 2px;
+    margin: 0 auto;
+	background-color: #1ca6fe;
+}
+.tabs_item_cho {
+    color: #1ca6fe;
+    font-weight: bold;
+    cursor: default;
+}
+.tabs_item_cho > .tabs_item_line {
+    display: block;
+}
+.hendle_right {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: 9;
+}
+/* 详细信息图标 */
+.content_table_detail{
+    width: 24px;
+    height: 24px;
+    margin:0 auto;
+    background: url('../images/my_asset_detail.png') center center no-repeat;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: 7px;
+}
+.content_table_detail:hover{
+    opacity: 0.8;
+}

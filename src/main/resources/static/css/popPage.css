@@ -1,0 +1,104 @@
+/* 弹窗 */
+.pop_page_warp .layui-layer-title {
+    height: 48px;
+    line-height: 48px;
+    background: url("../images/pop_page_top.png") center center/100% 100%;
+    font-size: 16px;
+    color: #fff;
+}
+#main_content .pop_page_warp .layui-layer-ico {
+    background: url("../images/pop_page_close.png") center center no-repeat;
+}
+/* end弹窗 */
+/* 弹窗 */
+.pop_page {
+    position: relative;
+    display: none;
+    background-color: #fff;
+}
+.more_top {
+    padding: 20px 20px 0;
+}
+.pop_page_msg {
+    color: #999;
+    height: 30px;
+    line-height: 30px;
+}
+.pop_page_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 56px;
+    width: 100%;
+    padding-right: 5px; 
+    background-color: #e9eef2;
+}
+.pop_page_bottom > div {
+    float: right;
+    width: 80px;
+    margin: 13px 15px 0 0;
+}
+.bule_btn1 {
+    background-image: linear-gradient(90deg, 
+		#00bd35 0%, 
+		#00a321 62%, 
+		#00890d 100%), 
+	linear-gradient(
+		#a1adb4, 
+		#a1adb4);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 3px;
+}
+.pop_page_btn_s {
+    background-image: linear-gradient(90deg, 
+		#39d7ff 0%, 
+		#009cff 100%), 
+	linear-gradient(
+		#a1adb4, 
+		#a1adb4);
+}
+.pop_page_btn_q {
+    background-image: linear-gradient(90deg, 
+		#90c3e3 0%, 
+		#76abcd 50%, 
+		#5b93b6 100%), 
+	linear-gradient(
+		#a1adb4, 
+		#a1adb4);
+}
+/* end弹窗 */
+
+/* 新增发放物资 */
+.content_table_line > div {
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 0;
+}
+.content_table_line_s > div {
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+}
+.content_table_line > .pop_page_attr > input {
+    width: 100%;
+}
+/* end新增发放物资 */
+/* 列表 */
+.no_margin {
+    margin-top: 0 !important;
+}
+.content_table_cho_btn {
+    background: url('../images/check_btn.png') center 14px no-repeat;
+}
+.content_table_line_has_cho .content_table_cho_btn {
+    background-position: center -16px;
+}
+/* end列表 */
+
+
+#new_job_task, #new_job_demand{
+    width: 255px;
+    height: 100px;
+    resize: none;
+}

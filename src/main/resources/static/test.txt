@@ -1,0 +1,12 @@
+测试git提交代码时，是否存在覆盖问题。
+
+测试流程：多人同时修改文件test.txt
+
+line1：
+torch test line
+
+line2：
+fanxiaopei test  --- add something by torch
+
+line3：
+fanxiaopei test  --- add something by torch

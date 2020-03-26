@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>404</title>
+		<script src="javascript/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<style>
+			html {
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body style="height: 100%; background: url(images/404page.png) center 33% no-repeat;">
+	</body>
+	<script>
+		function pageToken() {
+			$.ajax({
+				type: "GET",
+				url: "http://192.168.129.53:15673/assets/getMainServerAddr",
+				cache: false,
+				dataType: "json",
+				data: {},
+				async: true,
+				// cache: false,
+				success: function (baseA) {
+					if (!baseA) return;
+					var _base_addr = (baseA.code == 200 && baseA.data && baseA.data.status == 0) ? baseA.data.data : "";
+					if (_base_addr) {
+						window.location.href = "index.html";
+					}
+				},
+				error: function (responseData, textStatus, errorThrown) {
+				}
+			});
+		}
+		pageToken();
+		var timer = setInterval(pageToken, 5000)
+	</script>
+</html>

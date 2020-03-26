@@ -1,0 +1,87 @@
+
+.login_warp{
+    width: 100%;;
+    /* background-color: RGB(18,0,197); */
+}
+.login_header{
+    width: 100%;
+    height: 72px;
+    line-height: 85px;
+    padding-left:155px;
+    font-size: 17px;
+    color:rgb(70, 70, 70);
+    /* background:url('../images/login_logo.png') 100px center no-repeat; */
+}
+.login_footer{
+    width: 100%;
+    line-height: 64px;
+    text-align: center;
+    font-size: 14px;
+    color:rgb(105, 105, 105);
+}
+.login_box_warp{
+    width: 100%;
+    height: 475px;
+    background:url('../images/log_bc.jpg') center center no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+.login_box{
+    width: 350px;
+    padding:10px 0 40px;
+    position: absolute;
+    top:20%;
+    right: 12%;
+    margin-left: -225px;
+    box-shadow:10px 10px 20px rgba(0, 0, 0, .3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.registe_box{
+    top:13%;
+}
+.login_title{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 70px;
+}
+.login_form{
+    /* margin-top: 20px; */
+}
+.login_sub{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.login_reg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login_reg:hover{
+    opacity: 0.8;
+}
+.login_btn{
+    width: 230px;
+    height: 36px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 15px;
+    /* font-weight: 550; */
+    color:white;
+    background-color: rgb(0,104,246);
+    cursor: pointer;
+}
+.login_btn:hover{
+    opacity: 0.8;
+}
+.pop_page_attr_name{
+    width: 90px;
+}

@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'live-server' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData live-server
+8 silly fetchNamedPackageData live-server
+9 silly mapToRegistry name live-server
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'live-server',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'live-server',
+12 silly mapToRegistry   name: 'live-server',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://registry.npm.taobao.org/live-server
+14 verbose request uri http://registry.npm.taobao.org/live-server
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:22:45
+17 verbose request id 41112d433a3696a9
+18 http request GET http://registry.npm.taobao.org/live-server
+19 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 192.168.2.74:10000
+20 info attempt registry request try #2 at 14:22:57
+21 http request GET http://registry.npm.taobao.org/live-server
+22 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 192.168.2.74:10000
+23 info attempt registry request try #3 at 14:23:58
+24 http request GET http://registry.npm.taobao.org/live-server
+25 silly fetchPackageMetaData Error: connect ECONNREFUSED 192.168.2.74:10000
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1018:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1041:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+25 silly fetchPackageMetaData  error for live-server { Error: connect ECONNREFUSED 192.168.2.74:10000
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1018:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1041:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+25 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   syscall: 'connect',
+25 silly fetchPackageMetaData   address: '192.168.2.74',
+25 silly fetchPackageMetaData   port: 10000 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ECONNREFUSED 192.168.2.74:10000
+30 verbose stack     at Object.exports._errnoException (util.js:1018:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:1041:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+31 verbose cwd F:\AssetManage\AssetManage
+32 error Windows_NT 6.1.7601
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "live-server"
+34 error node v6.11.0
+35 error npm  v3.10.10
+36 error code ECONNREFUSED
+37 error errno ECONNREFUSED
+38 error syscall connect
+39 error Error: connect ECONNREFUSED 192.168.2.74:10000
+39 error     at Object.exports._errnoException (util.js:1018:11)
+39 error     at exports._exceptionWithHostPort (util.js:1041:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+39 error  { Error: connect ECONNREFUSED 192.168.2.74:10000
+39 error     at Object.exports._errnoException (util.js:1018:11)
+39 error     at exports._exceptionWithHostPort (util.js:1041:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+39 error   code: 'ECONNREFUSED',
+39 error   errno: 'ECONNREFUSED',
+39 error   syscall: 'connect',
+39 error   address: '192.168.2.74',
+39 error   port: 10000 }
+40 error If you are behind a proxy, please make sure that the
+40 error 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]

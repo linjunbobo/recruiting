@@ -1,0 +1,192 @@
+.my_vs{
+    width: 100%;
+    padding: 0 30px 50px 30px;
+}
+.my_cv_h{
+    width: 100%;
+    height: 250px;
+    padding: 60px 0 0 300px;
+    position: relative;
+    /* box-shadow: 0px 10px 10px #e2e2e2; */
+}
+.my_cv_h_img{
+    position: absolute;
+    top:40px;
+    left:20px;
+    width: 190px;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    /* background: url('../images/check_btn.png') 0 30px no-repeat; */
+    background-color: rgba(231, 231, 231, 0.39);
+}
+.my_cv_h_t{
+    line-height: 50px;
+
+}
+.my_cv_h_t > div{
+    display: inline-block;
+}
+.my_cv_h_t_name{
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+.my_cv_h_m{
+    line-height: 40px;
+}
+.my_cv_h_b{
+    line-height: 40px;
+}
+.cv_header_input{
+    width: 200px;
+    height: 36px;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0 8px;
+}
+.cv_header_input:hover, .cv_header_input:focus{
+    border:1px solid #37b1fd;
+}
+.my_cv_h_input{
+    margin-bottom: 15px;
+}
+.my_cv_h_input:hover{
+    
+}
+.my_cv_block{
+    width: 100%;
+    margin-top: 30px;
+    padding-right: 100px;
+}
+.my_cv_b_title{
+    width: 100%;
+    line-height: 30px;
+    padding: 0 0 5px 10px;
+    border-bottom: 1px solid #1ca6fe;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.my_cv_b_i_company{
+    width: 100%;
+    margin-top: 15px;
+    line-height: 40px;
+    padding-left: 5px;
+}
+.my_cv_b_i_company > div{
+    display: inline-block;
+}
+.my_cv_b_i_c_name{
+    margin-right: 30px;
+}
+
+.cv_info_item{
+    width: 100%;
+    margin-top: 20px;
+}
+.cv_info_item > input{
+    vertical-align: middle;
+}
+.cv_info_item_attr{
+    width: 100px;
+    /* line-height: 50px; */
+    color: #1178b8;
+    padding:0 0 0 5px;
+    font-weight: 600;
+}
+.cv_info_item_value{
+    width: 600px;
+    /* border: 1px solid #000000; */
+    /* line-height: 50px; */
+    /* margin-left: 40px; */
+}
+.cv_info_work_area{
+    width: 500px;
+    height: 100px;
+    resize: none;
+}
+.cv_info_evaluate_area{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    resize: none;
+}
+
+
+.my_cv_b_reward_item{
+    /* margin-top: 5px; */
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.cv_info_item_reward{
+    line-height: 30px;
+    padding-left: 5px;
+    margin-right: 40px;
+}
+.cv_info_item_r_time{
+    line-height: 30px;
+}
+.my_cv_b_evaluate{
+    width: 700px;
+    /* border:1px solid #313131; */
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+
+.my_cv_handle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 100px;
+    margin-top: 30px;
+}
+.my_cv_handle div{
+    width: 180px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.cv_info_re_item{
+    margin-top: 5px !important;
+}
+.my_cv_b_job{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.my_cv_b_edu{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.my_cv_edit_handle_add{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    margin-top: 20px;
+}
+.my_cv_edit_handle_add .line_handle_btn{
+    width: 300px;
+    text-align: center;
+}
+
+.my_cv_b_title div:last-child{
+    border: none;
+}
+
+.my_cv_b_item{
+    position: relative;
+}
+.my_cv_b_item_del{
+    position: absolute;
+    top:30%;
+    right:30px;
+}
